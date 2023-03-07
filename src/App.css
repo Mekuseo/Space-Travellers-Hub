@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,300&family=Quicksand:wght@300;400;500;600;700&family=Saira:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/*** NAVBAR ***/
+
+body {
+  background-color: aliceblue;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgb(72, 72, 72);
+  
+}
+
+/* .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+} */
+
+.right {
+  display: none;
+}
+
+.logo {
+  text-align: center;
+}
+
+nav ul a {
+  color: white;
+  font-size: 28px;
+  color: rgb(74, 172, 246);
+  text-decoration: none;
+}
+
+.logo a {
+  color: rgb(72, 72, 72);
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+nav ul {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  width: 100%;
+  background-color: rgba(72, 72, 72, 0.709);
+  backdrop-filter: blur(4px);
+  padding: 2rem;
+  text-align: center;
+  transition: 0.2s linear;
+}
+
+nav li {
+  margin: 10px 0;
+  list-style: none;
+}
+
+.show {
+  left: 0;
+}
+
+.hide {
+  left: -100%;
+}
+
+.menubar {
+  width: 10%;
+  font-size: 25px;
+  z-index: 99;
+}
+
+.menubar i {
+  color: rgb(44, 148, 227);
+}
+
+.menubar .fa-x {
+  color: whitesmoke;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 1rem 2rem;
+  }
+
+  nav ul a {
+    color: gray;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 23px;
+    color: rgb(44, 148, 227);
+  }
+
+  .logo a {
+    font-size: 26px;
+  }
+
+  nav ul {
+    position: unset;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    padding: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  .menubar {
+    display: none;
+  }
+}
