@@ -20,7 +20,6 @@ nav {
   align-items: center;
   padding: 10px;
   border-bottom: 1px solid rgb(72, 72, 72);
-  
 }
 
 /* .left {
@@ -39,7 +38,6 @@ nav {
 }
 
 nav ul a {
-  color: white;
   font-size: 28px;
   color: rgb(74, 172, 246);
   text-decoration: none;
@@ -97,7 +95,6 @@ nav li {
   }
 
   nav ul a {
-    color: gray;
     text-transform: capitalize;
     font-weight: 400;
     font-size: 23px;
