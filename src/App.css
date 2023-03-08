@@ -89,8 +89,100 @@ nav li {
   color: whitesmoke;
 }
 
-.mii li {
-  color: black;
+/*** Rocket jsx ***/
+.each {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.2rem 0;
+}
+
+.each .image {
+  width: 100%;
+}
+
+.each .image img {
+  width: 100%;
+}
+
+.text h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.text p {
+  margin-bottom: 5px;
+}
+
+.text button {
+  padding: 10px;
+  outline: none;
+  background-color: rgb(74, 172, 246);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.each .reserve {
+  background-color: rgb(45, 212, 45);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+/** profile.jsx **/
+.profile h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.proof {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  border-bottom: 1px solid gray;
+  padding: 2rem 0;
+}
+
+.proof .reserve {
+  border: 1px solid gray;
+  margin: 10px 0;
+}
+
+.proof li {
+  list-style: none;
+  border-bottom: 1px solid gray;
+  font-size: 20px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.proof li p,
+.proof li a,
+.proof li button {
+  width: 33%;
+}
+
+.proof li a {
+  text-decoration: none;
+}
+
+.proof li button {
+  background-color: rgba(250, 235, 215, 0.334);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.center {
+  text-align: center;
+  font-size: 30px;
 }
 
 @media (min-width: 768px) {
@@ -124,5 +216,24 @@ nav li {
 
   .menubar {
     display: none;
+  }
+
+  /*** rocket jsx ****/
+
+  .each {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .each .image {
+    width: 37%;
+  }
+
+  .each .image img {
+    width: 100%;
+  }
+
+  .text {
+    width: 60%;
   }
 }
