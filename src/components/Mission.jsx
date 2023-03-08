@@ -1,9 +1,8 @@
-import { useSelector } from 'react-redux';
+import React from 'react';
 
 function Mission() {
-  const mission = useSelector((state) => state.Mission.mission);
   return (
-    <div className="mii">
+    <div>
       mission page
     </div>
   );
