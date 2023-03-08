@@ -1,9 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { cancel, reserve } from '../redux/Rockets/RocketSlice';
 
-function RenderRocket({
-  image, name, desc, reserved,
-}) {
+function RenderRocket({ id, image, name, desc, reserved,}) {
+    const dispatch = useDispatch()
+ const handlecancel = () => {
+   dispatch((cancel(id)))
+ }
+ const handlereserve = () => {
+   dispatch((reserve(id)))
+ }
+
   return (
     <div className="each">
       <div className="image">
@@ -15,18 +23,17 @@ function RenderRocket({
           {reserved ? <span className="reserve"> reserved </span> : null}
           {desc}
         </p>
-        <button type="submit">
-          {reserved ? 'Cancel Reservation' : 'reserve rocket'}
-        </button>
+         {reserved ? <button type="button" onClick={() => handlecancel(id)}>Cancel Reservation</button> : <button type="button" onClick={() => handlereserve(id)}>reserve rocket</button> }
       </div>
     </div>
   );
 }
 
 RenderRocket.propTypes = {
+  id: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  reserved: PropTypes.string.isRequired,
+  reserved: PropTypes.bool.isRequired,
   desc: PropTypes.string.isRequired,
 };
 

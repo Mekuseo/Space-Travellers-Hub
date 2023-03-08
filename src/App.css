@@ -89,10 +89,6 @@ nav li {
   color: whitesmoke;
 }
 
-.mii li {
-  color: black;
-}
-
 @media (min-width: 768px) {
   body {
     padding: 1rem 2rem;

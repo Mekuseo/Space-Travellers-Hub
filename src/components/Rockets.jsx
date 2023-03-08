@@ -18,7 +18,7 @@ function Rockets() {
           image={rocket.images[0]}
           name={rocket.rocket_name}
           desc={rocket.description}
-          reserved={rocket.reserved}
+          reserved={rocket.reserve}
         />
       ))}
     </div>

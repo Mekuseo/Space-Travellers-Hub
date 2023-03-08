@@ -13,6 +13,10 @@ const initialState = {
 const rockets = createSlice({
   name: 'rocket',
   initialState,
+  reducers: {
+    reserve: (state, action) => ({ rockets: state.rockets.map((rock) => (rock.id !== action.payload ? rock : { ...rock, reserve: true })) }),
+    cancel: (state, action) => ({ rockets: state.rockets.map((rock) => (rock.id !== action.payload ? rock : { ...rock, reserve: false })) }),
+  },
   extraReducers: (builder) => {
     builder.addCase(RocketApi.fulfilled, (state, action) => {
       const show = action.payload;
@@ -23,7 +27,8 @@ const rockets = createSlice({
             rocket_name: rocket.name,
             images: rocket.flickr_images,
             description: rocket.description,
-            reserved: false,
+            link: rocket.wikipedia,
+            reserve: false
           }
         )),
       };
@@ -32,3 +37,4 @@ const rockets = createSlice({
 });
 
 export default rockets.reducer;
+export const { reserve, cancel } = rockets.actions;
