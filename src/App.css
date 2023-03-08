@@ -1,39 +1,128 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,300&family=Quicksand:wght@300;400;500;600;700&family=Saira:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/*** NAVBAR ***/
+
+body {
+  background-color: aliceblue;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgb(72, 72, 72);
+}
+
+/* .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+} */
+
+.right {
+  display: none;
+}
+
+.logo {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav ul a {
+  font-size: 28px;
+  color: rgb(74, 172, 246);
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
+.logo a {
+  color: rgb(72, 72, 72);
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+nav ul {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  width: 100%;
+  background-color: rgba(72, 72, 72, 0.709);
+  backdrop-filter: blur(4px);
+  padding: 2rem;
+  text-align: center;
+  transition: 0.2s linear;
+}
+
+nav li {
+  margin: 10px 0;
+  list-style: none;
+}
+
+.show {
+  left: 0;
+}
+
+.hide {
+  left: -100%;
+}
+
+.menubar {
+  width: 10%;
+  font-size: 25px;
+  z-index: 99;
+}
+
+.menubar i {
+  color: rgb(44, 148, 227);
+}
+
+.menubar .fa-x {
+  color: whitesmoke;
+}
+
+.mii li {
+  color: black;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 1rem 2rem;
   }
-}
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
+  nav ul a {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 23px;
+    color: rgb(44, 148, 227);
   }
-  50% {
-    transform: translateY(10px);
+
+  .logo a {
+    font-size: 26px;
   }
-  100% {
-    transform: translateY(0px);
+
+  nav ul {
+    position: unset;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    padding: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  .menubar {
+    display: none;
   }
 }
