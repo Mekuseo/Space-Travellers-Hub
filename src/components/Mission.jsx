@@ -3,7 +3,7 @@ import React from 'react';
 function Mission() {
   return (
     <div>
-      Mission
+      mission page
     </div>
   );
 }
