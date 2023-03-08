@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RocketApi } from '../redux/Rockets/RocketSlice';
+import RenderRocket from './Render_rocket';
 
 function Rockets() {
   const dispatch = useDispatch();
@@ -8,10 +9,18 @@ function Rockets() {
   useEffect(() => {
     dispatch((RocketApi()));
   }, [dispatch]);
-  console.log(rocket);
   return (
     <div>
-      Rocket
+      {rocket.map((rocket) => (
+        <RenderRocket
+          key={rocket.id}
+          id={rocket.id}
+          image={rocket.images[0]}
+          name={rocket.rocket_name}
+          desc={rocket.description}
+          reserved={rocket.reserved}
+        />
+      ))}
     </div>
   );
 }
