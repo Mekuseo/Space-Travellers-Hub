@@ -1,15 +1,17 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { RocketApi } from '../redux/Rockets/RocketSlice';
 
 function Rockets() {
-  const list = useSelector((state) => state.Rocket.rockets);
+  const dispatch = useDispatch();
+  const rocket = useSelector((state) => state.Rocket.rockets);
+  useEffect(() => {
+    dispatch((RocketApi()));
+  }, [dispatch]);
+  console.log(rocket);
   return (
-    <div className="mii">
-      <ul>
-        {list.map((lee) => (
-          <li key={Math.floor(Math.random() * 1000)}>{lee}</li>
-        ))}
-      </ul>
+    <div>
+      Rocket
     </div>
   );
 }
