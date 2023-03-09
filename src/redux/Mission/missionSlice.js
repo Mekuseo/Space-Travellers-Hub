@@ -20,7 +20,6 @@ const missionSlice = createSlice({
       const updatedMission = {
         ...state.missions[missionIndex],
         member: true,
-        reserved: false,
       };
       const updatedMissions = [...state.missions];
       updatedMissions[missionIndex] = updatedMission;
@@ -34,7 +33,6 @@ const missionSlice = createSlice({
       const updatedMission = {
         ...state.missions[missionIndex],
         member: false,
-        reserved: false,
       };
       const updatedMissions = [...state.missions];
       updatedMissions[missionIndex] = updatedMission;
@@ -79,7 +77,6 @@ const missionSlice = createSlice({
         name: mission.mission_name,
         description: mission.description,
         member: false,
-        reserved: false,
       }));
       return {
         ...state,

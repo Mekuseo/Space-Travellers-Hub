@@ -114,6 +114,15 @@ nav li {
   margin-bottom: 5px;
 }
 
+button {
+  background-color: rgb(74, 172, 246);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .text button {
   padding: 10px;
   outline: none;
@@ -161,6 +170,10 @@ nav li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+button:hover {
+  background-color: rgb(45, 138, 206);
 }
 
 .proof li p,
@@ -247,7 +260,8 @@ table {
   margin-top: 2rem;
 }
 
-th, td {
+th,
+td {
   padding: 1rem;
   text-align: center;
   border: 1px solid gray;
@@ -257,17 +271,3 @@ th {
   background-color: rgb(44, 148, 227);
   color: white;
 }
-
-button {
-  background-color: rgb(74, 172, 246);
-  color: white;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: rgb(45, 138, 206);
-}
-
