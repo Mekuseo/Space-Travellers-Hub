@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <img src="https://pin.it/2cd2Vj6" alt="logo" width="200"  height="auto" />
+  <img src="https://www.pinterest.com/pin/512777107552107403.gif/" alt="logo" width="200"  height="auto" />
   <br/>
 
   <h3><b>README</b></h3>
