@@ -150,6 +150,7 @@ nav li {
 .proof .reserve {
   border: 1px solid gray;
   margin: 10px 0;
+  border-radius: 10px;
 }
 
 .proof li {
@@ -187,7 +188,7 @@ nav li {
 
 @media (min-width: 768px) {
   body {
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
   }
 
   nav ul a {
@@ -222,11 +223,12 @@ nav li {
 
   .each {
     flex-direction: row;
-    justify-content: space-between;
+    align-items: unset;
   }
 
   .each .image {
-    width: 37%;
+    width: 30%;
+    margin-right: 20px;
   }
 
   .each .image img {
@@ -234,6 +236,6 @@ nav li {
   }
 
   .text {
-    width: 60%;
+    width: 65%;
   }
 }
