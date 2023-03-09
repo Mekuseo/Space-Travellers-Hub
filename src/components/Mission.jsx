@@ -1,7 +1,7 @@
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { joinMission, leaveMission } from "../redux/Mission/missionSlice";
-import { cancel } from "../redux/Rockets/RocketSlice";
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { joinMission, leaveMission } from '../redux/Mission/missionSlice';
+import { cancel } from '../redux/Rockets/RocketSlice';
 
 function Mission() {
   const missions = useSelector((state) => state.Mission.missions);
@@ -35,44 +35,52 @@ function Mission() {
         <tbody>
           {missions.map((mission) => {
             const rocket = rockets.find(
-              (r) => r.reserved && r.mission_id === mission.id
+              (r) => r.reserved && r.mission_id === mission.id,
             );
             return (
               <tr key={mission.id}>
                 <td>{mission.name}</td>
                 <td>{mission.description}</td>
                 <td>
-                  {rocket ? (
-                    <span>{rocket.rocket_name} - Reserved</span>
+                  {rocket}
+                  {' '}
+                  ? (
+                  <span>
+                    {rocket.rocket_name}
+                    {' '}
+                    - Reserved
+                  </span>
                   ) : mission.member ? (
-                    <span>Active member</span>
+                  <span>Active member</span>
                   ) : (
-                    <span>Not a member</span>
-                  )}
+                  <span>Not a member</span>
+                  )
                 </td>
                 <td>
-                  {rocket ? (
-                    <button
-                      type="button"
-                      onClick={() => handleCancelReservation(rocket.id)}
-                    >
-                      Cancel Reservation
-                    </button>
+                  {rocket}
+                  {' '}
+                  ? (
+                  <button
+                    type="button"
+                    onClick={() => handleCancelReservation(rocket.id)}
+                  >
+                    Cancel Reservation
+                  </button>
                   ) : mission.member ? (
-                    <button
-                      type="button"
-                      onClick={() => handleLeaveMission(mission.id)}
-                    >
-                      Leave Mission
-                    </button>
+                  <button
+                    type="button"
+                    onClick={() => handleLeaveMission(mission.id)}
+                  >
+                    Leave Mission
+                  </button>
                   ) : (
-                    <button
-                      type="button"
-                      onClick={() => handleJoinMission(mission.id)}
-                    >
-                      Join Mission
-                    </button>
-                  )}
+                  <button
+                    type="button"
+                    onClick={() => handleJoinMission(mission.id)}
+                  >
+                    Join Mission
+                  </button>
+                  )
                 </td>
               </tr>
             );
