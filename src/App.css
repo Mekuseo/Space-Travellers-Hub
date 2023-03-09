@@ -176,16 +176,16 @@ nav li {
 
 .proof li a:hover {
   color: rgb(45, 212, 45);
-  transition: .3s linear;
+  transition: 0.3s linear;
 }
 
 .proof li button {
   background-color: rgba(250, 235, 215, 0.334);
-  border: .5px solid rgb(247, 49, 49);
+  border: 0.5px solid rgb(247, 49, 49);
   border-radius: 10px;
   padding: 10px;
   font-size: 18px;
-  transition: .3s linear;
+  transition: 0.3s linear;
 }
 
 .proof li button:hover {
