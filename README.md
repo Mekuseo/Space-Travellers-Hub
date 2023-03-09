@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <img src="https://www.pinterest.com/pin/512777107552107403.gif/" alt="logo" width="200"  height="auto" />
+  <img src="https://media.giphy.com/media/jIgBiAvcko2N2I2Gjq/giphy-downsized-large.gif" alt="logo" width="800"  height="auto" />
   <br/>
 
   <h3><b>README</b></h3>
