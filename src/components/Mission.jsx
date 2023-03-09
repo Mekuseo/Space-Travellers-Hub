@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { joinMission } from "../redux/Mission/missionSlice";
+import { joinMission, leaveMission } from "../redux/Mission/missionSlice";
 import { cancel } from "../redux/Rockets/RocketSlice";
 
 function Mission() {
@@ -11,6 +11,10 @@ function Mission() {
   const handleJoinMission = (id) => {
     dispatch(joinMission(id));
     dispatch(cancel(id));
+  };
+
+  const handleLeaveMission = (id) => {
+    dispatch(leaveMission(id));
   };
 
   const handleCancelReservation = (id) => {
@@ -55,7 +59,12 @@ function Mission() {
                       Cancel Reservation
                     </button>
                   ) : mission.member ? (
-                    <button type="button">Leave Mission</button>
+                    <button
+                      type="button"
+                      onClick={() => handleLeaveMission(mission.id)}
+                    >
+                      Leave Mission
+                    </button>
                   ) : (
                     <button
                       type="button"
