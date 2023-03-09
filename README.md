@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <img src="https://www.pinterest.com/pin/512777107552107403/" alt="logo" width="200"  height="auto" />
+  <img src="https://pin.it/2cd2Vj6" alt="logo" width="200"  height="auto" />
   <br/>
 
   <h3><b>README</b></h3>
@@ -78,7 +78,7 @@
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo Link]()
+- [Live Demo Link](https://space-x-vv8h.onrender.com)
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
