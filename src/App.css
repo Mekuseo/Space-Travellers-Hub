@@ -187,10 +187,11 @@ button:hover {
 }
 
 .proof li button {
-  background-color: rgba(250, 235, 215, 0.334);
+  background-color: rgba(248, 202, 142, 0.334);
   border: none;
   border-radius: 10px;
   padding: 10px;
+  color: gray;
   font-size: 18px;
 }
 
@@ -270,4 +271,17 @@ td {
 th {
   background-color: rgb(44, 148, 227);
   color: white;
+}
+
+.mbtn {
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.act {
+  background-color: rgb(45, 212, 45);
+}
+
+.not {
+  background-color: rgba(170, 169, 169, 0.448);
 }

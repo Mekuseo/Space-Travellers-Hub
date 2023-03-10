@@ -40,35 +40,7 @@ const missionSlice = createSlice({
         ...state,
         missions: updatedMissions,
       };
-    },
-    reserveMission: (state, action) => {
-      const missionIndex = state.missions.findIndex((mission) => mission.id === action.payload);
-      const updatedMission = {
-        ...state.missions[missionIndex],
-        member: false,
-        reserved: true,
-      };
-      const updatedMissions = [...state.missions];
-      updatedMissions[missionIndex] = updatedMission;
-      return {
-        ...state,
-        missions: updatedMissions,
-      };
-    },
-    cancelReservation: (state, action) => {
-      const missionIndex = state.missions.findIndex((mission) => mission.id === action.payload);
-      const updatedMission = {
-        ...state.missions[missionIndex],
-        member: false,
-        reserved: false,
-      };
-      const updatedMissions = [...state.missions];
-      updatedMissions[missionIndex] = updatedMission;
-      return {
-        ...state,
-        missions: updatedMissions,
-      };
-    },
+    }
   },
   extraReducers: (builder) => {
     builder.addCase(fetchmission.fulfilled, (state, action) => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { cancel } from '../redux/Rockets/RocketSlice';
+import { leaveMission } from '../redux/Mission/missionSlice';
 
 function MissionProfile() {
   const activeMissions = useSelector(
@@ -9,7 +9,7 @@ function MissionProfile() {
   const dispatch = useDispatch();
 
   const handleCancel = (id) => {
-    dispatch(cancel(id));
+    dispatch(leaveMission(id));
   };
 
   return (
