@@ -114,6 +114,15 @@ nav li {
   margin-bottom: 5px;
 }
 
+button {
+  background-color: rgb(74, 172, 246);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .text button {
   padding: 5px;
   outline: none;
@@ -162,6 +171,10 @@ nav li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+button:hover {
+  background-color: rgb(45, 138, 206);
 }
 
 .proof li p,
@@ -252,4 +265,23 @@ nav li {
   .text {
     width: 65%;
   }
+}
+
+/* Mission Page */
+
+table {
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid gray;
+}
+
+th {
+  background-color: rgb(44, 148, 227);
+  color: white;
 }
