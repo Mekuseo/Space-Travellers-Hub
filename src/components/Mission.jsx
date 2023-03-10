@@ -33,7 +33,7 @@ function Mission() {
               <td>{mission.name}</td>
               <td>{mission.description}</td>
               <td>
-                {mission.member ? <span>Active member</span> : <span>Not a member</span>}
+                {mission.member ? <span className="mbtn act">Active member</span> : <span className="mbtn not">Not a member</span>}
               </td>
               <td>
                 {mission.member ? (
