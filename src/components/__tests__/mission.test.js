@@ -4,6 +4,6 @@ import store from '../../redux/store';
 import Mission from '../Mission';
 
 test('home component match snapshot', () => {
-  const tree = renderer.create(<Provider store={store}><Mission /> </Provider>).toJSON;
+  const tree = renderer.create(<Provider store={store}><Mission /></Provider>).toJSON;
   expect(tree).toMatchSnapshot();
 });
