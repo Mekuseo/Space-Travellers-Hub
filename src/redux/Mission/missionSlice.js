@@ -40,7 +40,7 @@ const missionSlice = createSlice({
         ...state,
         missions: updatedMissions,
       };
-    }
+    },
   },
   extraReducers: (builder) => {
     builder.addCase(fetchmission.fulfilled, (state, action) => {
