@@ -1,13 +1,40 @@
 <a name="readme-top"></a>
 
+<!--
+HOW TO USE:
+This is an example of how you may give instructions on setting up your project locally.
+
+Modify this file to match your project and remove sections that don't apply.
+
+REQUIRED SECTIONS:
+- Table of Contents
+- About the Project
+  - Built With
+  - Live Demo
+- Getting Started
+- Authors
+- Future Features
+- Contributing
+- Show your support
+- Acknowledgements
+- License
+
+OPTIONAL SECTIONS:
+- FAQ
+
+After you're finished please remove all the comments and instructions!
+-->
 
 <div align="center">
-  <img src="https://media.giphy.com/media/jIgBiAvcko2N2I2Gjq/giphy-downsized-large.gif" alt="logo" width="800"  height="auto" />
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>README</b></h3>
+  <h3><b>Microverse README Template</b></h3>
 
 </div>
+
+<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
@@ -31,142 +58,180 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
+<!-- PROJECT DESCRIPTION -->
 
-# 📖 SPACE_TRAVELLER_HUB  <a name="about-project"></a>
+# 📖 [your_project_name] <a name="about-project"></a>
 
-**SPACE_TRAVELLER_HUB** is a rocket website with features of making reservations, cancel reservation and a profile page that upfates the state of reservation of each rocket.
+> Describe your project in 1 or 2 sentences.
 
+**[your_project__name]** is a...
 
 ## 🛠 Built With <a name="built-with"></a>
-- REACT
-- CSS
-- REDUX
 
 ### Tech Stack <a name="tech-stack"></a>
 
- <details>
+> Describe the tech stack and include only the relevant sections that apply to your project.
+
+<details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https:/reactjs.com/">REACTJS</a></li>
-  </ul>
-</details> 
-<details>
-  <summary>style</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">CSS</a></li>
+    <li><a href="https://reactjs.org/">React.js</a></li>
   </ul>
 </details>
 
 <details>
-<summary>state management</summary>
+  <summary>Server</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">REDUXJS</a></li>
+    <li><a href="https://expressjs.com/">Express.js</a></li>
   </ul>
 </details>
 
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
+> Describe between 1-3 key features of the application.
 
-- **receive data from an API using axios and fetch**
-- **manage state using redux**
-- **Create a reservation and cancel button.**
-- **create a profile page that get the updated reservation and cancelled reservation.**
+- **[key_feature_1]**
+- **[key_feature_2]**
+- **[key_feature_3]**
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
+<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo Link](https://space-x-vv8h.onrender.com)
 
+> Add a link to your deployed project.
+
+- [Live Demo Link](https://google.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
+> Describe how a new developer could make use of your project.
+
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-- [git](https://git-scm.com/downloads): A tool for managing source code
-- [Visual Studio Code](https://code.visualstudio.com/): A source code editor
+In order to run this project you need:
 
+<!--
+Example command:
+
+```sh
+ gem install rails
+```
+ -->
 
 ### Setup
 
 Clone this repository to your desired folder:
-https://github.com/AbdimulhinYussuf3675/Module2_capstune_Project.git
 
-
+<!--
 Example commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/Module2_capstune_Project.git
+  git clone git@github.com:myaccount/my-project.git
 ```
+--->
 
 ### Install
 
-- Run npm install after cloning the repo
+Install this project with:
 
-install npx
-
+<!--
 Example command:
 
 ```sh
   cd my-project
-  npx install
+  gem install
 ```
+--->
 
 ### Usage
 
-- Run npm start for development. 
-- Run npm run build for production
+To run the project, execute the following command:
 
+<!--
+Example command:
+
+```sh
+  rails server
+```
+--->
 
 ### Run tests
 
 To run tests, run the following command:
-- Run npx eslint . for JS check
-- Run npx eslint . --fix to fix JS errors if found
-- Run npx stylelint "**/*.{css,scss}" for CSS check
-- Run npx stylelint "**/*.{css,scss}" --fix to fix CSS errors if found.
 
+<!--
+Example command:
+
+```sh
+  bin/rails test test/models/article_test.rb
+```
+--->
 
 ### Deployment
 
 You can deploy this project using:
-- Github pages
 
-Github pages
+<!--
+Example:
 
-<p>follow <a href="https://www.w3schools.com/git/git_remote_pages.asp?remote=github">these steps</a> for example</p>
+```sh
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-##👥 Authors <a name="authors"></a>
-
- 👤**chukwuemeka Kanu**
-
-- GitHub: [@Donmark2k](https://github.com/Mekuseo)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/chukwuemekaKanu/)
-
-👤**Samuel Tobby**
-
-- GitHub: [@Tobby8629](https://github.com/Tobby8629)
-- Twitter: [@Tobby_samuels](https://twitter.com/Tobby_samuels)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/samuel-popoola-tobby/)
-
+```
+ -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+> Mention all of the collaborators of this project.
+
+👤 **Author1**
+
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+👤 **Author2**
+
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-- I will add time and date for rocket take off
 
+> Describe 1 - 3 features you will add to the project.
+
+- [ ] **[new_feature_1]**
+- [ ] **[new_feature_2]**
+- [ ] **[new_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -176,38 +241,48 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-[Victor Chiemerie](https://github.com/Victor-chiemerie) has been of tremendous help so far.
-Give a ⭐️ if you like this project!
+> Write a message to encourage readers to support your project
+
+If you like this project...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to appreciate [Microverse](https://www.microverse.org/) for providing the resources and the platform for us to be a Professional full-stack developer.
+> Give credit to everyone who inspired your codebase.
+
+I would like to thank...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- FAQ (optional) -->
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-- **[Are you sure that you are owner of this work]**
+> Add at least 2 questions new developers would ask when they decide to use your project.
 
-  - [Yes,]
+- **[Question_1]**
 
-- **[Can you make the work to be responsive]**
+  - [Answer_1]
 
-  - [yes]
+- **[Question_2]**
 
+  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](MIT.md) licensed.
+This project is [MIT](./LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
