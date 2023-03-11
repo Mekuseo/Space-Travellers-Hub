@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 export const fetchmission = createAsyncThunk('missions/fetchmission', async () => {
   const response = await fetch('https://api.spacexdata.com/v3/missions');
-  const { data } = response.json();
+  const data = response.json();
   return data;
 });
 
