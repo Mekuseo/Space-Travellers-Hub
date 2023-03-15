@@ -148,8 +148,9 @@ Github pages
 
  👤**chukwuemeka Kanu**
 
-- GitHub: [@Donmark2k](https://github.com/Mekuseo)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/chukwuemekaKanu/)
+- GitHub: [@mekuseo](https://github.com/Mekuseo)
+- LinkedIn: [@chukwuemekakanu](https://www.linkedin.com/in/chukwuemekaKanu/)
+- Twitter: [@fullstack_pison](https://www.twitter.com/fullstack_pison)
 
 👤**Samuel Tobby**
 
